@@ -21,6 +21,7 @@ body{
 }
 .navigation{
 	display: flex;
+	padding-left: 0px;
 }
 .navigation li{
 	list-style: none;
@@ -114,7 +115,7 @@ body{
 }
 .bigboard{
 	background-color: #f0efee;
-	padding: 150px 0 115px 0;
+	padding: 150px 0 130px 0;
 
 }
 .bigboard .container{
@@ -126,8 +127,12 @@ body{
 }
 .bigboard_img img{
 	position: absolute;
-	left:0 ;
-	bottom: 0px;	
+	right: 0;
+
+	bottom: -180px;	
+}
+.bigboard_text{
+	width: 50%;
 }
 .bigboard_text p:nth-child(1){
 	font-size: 30px;
@@ -213,26 +218,33 @@ body{
 	display: flex;
 	width: 100%;
 	background-color: #ff7373;
-	flex-flow: column;
+	
 	margin-bottom: 30px;
+	
+}
+.one_block div{
+	display: flex;
 	justify-content: center;
 	align-items: flex-end;
+	flex-flow: column;
+	margin-left: 30px;
 }
-.one_block p{
+.one_block img{
+	width: 200px;
+	height: 250px;
+}
+.one_block div p:nth-child(1){
 	font-size: 30px;
 	color: #fff;
-	margin:0;
-
+	margin: 30px 90px 0 0;
 }
-.one_block p:nth-child(1){
-	margin-right: 95px;
-	margin-top: 60px;
+.one_block div p:nth-child(2){
+	margin: 0px 80px 30px 0;
+	font-size: 30px;
+	color:#fff;
+	
 }
-.one_block p:nth-child(2){
-	margin-right: 80px;
-	margin-bottom: 30px;
-}
-.one_block a{
+.one_block div a{
 	background-color: #623232;
 	color: #fff;
 	font-size: 16px;
