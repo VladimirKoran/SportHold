@@ -32,7 +32,7 @@ body{
 }
 .authorization{
 	display: flex;
-	margin: 17px;
+	margin: 15px;
 }
 .cart{
 	margin-right: 35px;
@@ -45,14 +45,247 @@ body{
 	text-decoration: none;
 	color: #dcc5b8;
 }
+/*.user_profile{
+	letter-spacing : -.36em;
+	font-size : 0;
+}
+- 2 способ
+*/
+.user_profile span{
+
+}
 .user_profile span a{
 	text-decoration: none;
 	color: #fff;
 	border: 1px solid rgba(255, 115, 115, 0.5);
-	padding: 20px;
-	margin:0;
+	padding: 19px;
+	/*margin-left: -.36em -1 способ*/
+	/*letter-spacing: normal;
+	font-size : 14px; - 2 способ*/
+
 }
 .user_profile span a:hover, .user_profile span a:active{
 	background-color: rgba(255, 115, 115, 1);
 	border: 1px solid rgba(255, 115, 115, 1);
+}
+.menu{
+	background-color: #623232;
+
+}
+.menu .container a img{
+	margin-top:10px;
+}
+.menu .container{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	/*margin-left: 155px;*/
+}
+.menu_list{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.menu_list li{
+	list-style: none;
+	
+	position: relative;
+}
+.menu_list li a{
+	text-decoration: none;
+	color: #fff;
+	margin-right:35px; 
+}
+.menu_list li.active:after,
+.menu_list li:hover:after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background-color: #ff7373;
+	margin: -16px;
+}
+.bigboard{
+	background-color: #f0efee;
+	padding: 150px 0 115px 0;
+
+}
+.bigboard .container{
+	display:flex;
+	justify-content: flex-end;
+}
+.bigboard_img{
+	position: relative;
+}
+.bigboard_img img{
+	position: absolute;
+	left:0 ;
+	bottom: 0px;	
+}
+.bigboard_text p:nth-child(1){
+	font-size: 30px;
+	color: #623232;
+	margin:0;
+}
+.bigboard_text p:nth-child(2){
+	font-size: 70px;
+	color: #623232;
+	margin:0;
+	margin-top:20px;
+}
+.bigboard_text p:nth-child(3){
+	font-size: 50px;
+	color: #ff7373;
+	margin-top:30px;
+	margin:0;
+}
+.bigboard_text p:nth-child(4){
+	margin-top:40px;
+	margin-bottom: 40px;
+
+}
+.bigboard_text a{
+	text-decoration: none;
+	color: #fff;
+	padding: 20px 45px;
+	background-color: #ff7373;
+	border:none;
+	margin-top: 40px;
+}
+.top_box .container{
+	display: flex;
+	
+}
+.first_half img{
+	height: 21%;
+	width: 16%;
+	margin:25px;
+}
+.first_half{
+	width: 50%;
+	background: url(img/16-400_Nike_Kyrie_Hero_Pair-01_hd_1600.png) no-repeat 100% 100%;
+	
+	display: flex;
+	margin-right: 30px;
+	background-color: #000;
+	background-position: -125px;
+	padding: 15px 0 30px 0;
+}
+.first_half div p:nth-child(1){
+	font-size: 30px;
+	color: #fff;
+	margin:0;
+}
+.first_half div p:nth-child(2){
+	font-size: 30px;
+	color: #4bd8cd;
+	margin-bottom: 300px;
+}
+.first_half div{
+	display: flex;
+
+	justify-content: center;
+
+	flex-flow: wrap;
+
+	margin-right: 125px;
+}
+.first_half div a{
+	background-color: #4bd8cd;
+	text-decoration: none;
+	padding: 15px 25px;
+	color:#000;
+}
+.second_half{
+	display: flex;
+	width: 50%;
+	flex-wrap: wrap;
+
+}
+.one_block{
+	display: flex;
+	width: 100%;
+	background-color: #ff7373;
+	flex-flow: column;
+	margin-bottom: 30px;
+	justify-content: center;
+	align-items: flex-end;
+}
+.one_block p{
+	font-size: 30px;
+	color: #fff;
+	margin:0;
+
+}
+.one_block p:nth-child(1){
+	margin-right: 95px;
+	margin-top: 60px;
+}
+.one_block p:nth-child(2){
+	margin-right: 80px;
+	margin-bottom: 30px;
+}
+.one_block a{
+	background-color: #623232;
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	margin-right: 125px;
+	padding:15px 30px;
+	margin-bottom: 55px;
+}
+.two{
+	display: flex;
+	width: 100%;
+	
+}
+.two_block{
+	display: flex;
+	justify-content: flex-end;
+	background: url(img/dominik-martin-100802.png) no-repeat 100% 100%;
+	background-position: center;
+	flex-flow: column;
+	margin-right: 30px;
+	width: 255px;
+}
+.two_block p:nth-child(1){
+	font-size: 30px;
+	color: #fff;
+	margin-left:70px;
+	margin-bottom: 0;
+
+}
+.two_block p:nth-child(2){
+	font-size: 30px;
+	color: #ff7373;
+	margin-left:50px;
+	margin-bottom: 70px;
+	margin-top: 0px;
+}
+.three_block{
+	display: flex;
+	justify-content: flex-start;
+	background-color: #cecece;
+	flex-flow: column;
+	width: 255px;
+	height: 255px;
+}
+.three_block p:nth-child(1){
+	color: #6b7072;
+	font-size: 30px;
+	margin:0;
+	margin-left: 95px;
+}
+.three_block p:nth-child(2){
+	color: #fff;
+	font-size: 30px;margin:0;
+	margin-left: 50px;
+	margin-bottom: 58px;
 }
