@@ -164,6 +164,9 @@ body{
 	border:none;
 	margin-top: 40px;
 }
+.top_box{
+	margin: 50px 0 100px 0;
+}
 .top_box .container{
 	display: flex;
 	
@@ -294,7 +297,7 @@ body{
 	justify-content: flex-start;
 	background-color: #cecece;
 	flex-flow: column;
-	width: 255px;
+	width: 260px;
 	height: 255px;
 }
 .three_block p:nth-child(1){
