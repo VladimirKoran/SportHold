@@ -1,3 +1,6 @@
+img{
+	max-width: 100%;
+}
 body{
 	width: 100%;
 	font-family: 'TruenoRegular';
@@ -115,7 +118,7 @@ body{
 }
 .bigboard{
 	background-color: #f0efee;
-	padding: 150px 0 150px 0;
+	padding: 75px 0 75px 0;
 
 }
 .bigboard .container{
@@ -124,12 +127,12 @@ body{
 }
 .bigboard_img{
 	position: relative;
+	width: 100%;
 }
 .bigboard_img img{
 	position: absolute;
-	right: 0;
-
-	bottom: -200px;	
+	right: 115px;
+	bottom: -115px;	
 }
 .bigboard_text{
 	width: 50%;
@@ -312,4 +315,78 @@ body{
 	font-size: 30px;margin:0;
 	margin-left: 50px;
 	margin-bottom: 22px;
+}
+.control_header{
+	display: flex;
+	justify-content: center;
+}
+.control_header span{
+
+	font-size: 30px;
+	font-family: "TruenoBd", sans-serif;
+	color: #bab8b4;
+	line-height: 1.2;
+	text-align: center;
+	margin-right: 35px;
+}
+.control_header span.active{
+	color: #593534;
+	font-weight: 600;
+}
+.elements_shop{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.element{
+	border: solid 1px rgb(223, 222, 221);
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+	margin-right: 15px;
+	margin-left: 15px;
+	width: calc(25% - 30px);
+	box-sizing: border-box;
+	padding: 25px;
+}
+.price{
+	display: flex;
+	justify-content: space-between;
+	margin-right: -25px;
+}
+.sale{
+	background-color: #e4716f;
+	color: #fff;
+	padding: 5px 10px;
+	margin:0;
+}
+.finale_price{
+	color: #e4716f;
+
+}
+.price p:first-child{
+	font-size: 24px;
+	margin:0;
+}
+.previous_price{
+	text-decoration:line-through;
+}
+.element p{
+	margin-bottom: 0;
+}
+.brands .container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.brands .container img:first-child{
+	margin-left: 30px;
+
+}
+.brands .container img:last-child{
+	margin-right: 30px;
 }
