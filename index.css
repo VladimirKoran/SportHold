@@ -132,7 +132,7 @@ body{
 .bigboard_img img{
 	position: absolute;
 	right: 115px;
-	bottom: -115px;	
+	bottom: -117px;	
 }
 .bigboard_text{
 	width: 50%;
@@ -364,16 +364,29 @@ body{
 	padding: 5px 10px;
 	margin:0;
 }
+.sale.without_sale{
+	display: none;
+}
 .finale_price{
-	color: #e4716f;
+	color: #888683;
 
+}
+.finale_price.without_sale{
+	margin-bottom: 35px;
+}
+.finale_price.with_sale{
+	color: #e4716f;
 }
 .price p:first-child{
 	font-size: 24px;
-	margin:0;
+	margin-top:0;
+
 }
 .previous_price{
 	text-decoration:line-through;
+}
+.previous_price.without_sale{
+	display: none;
 }
 .element p{
 	margin-bottom: 0;
@@ -389,4 +402,16 @@ body{
 }
 .brands .container img:last-child{
 	margin-right: 30px;
+}
+.brands .container img{
+	filter: grayscale(100%);
+	opacity: 0.3;
+}
+.brands .container img:hover{
+	filter: grayscale(0%);
+	opacity: 1;
+	transition: 1s;
+}
+.brands .container img:not(:hover){
+	transition: 1s;
 }
