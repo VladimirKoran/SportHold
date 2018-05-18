@@ -418,7 +418,7 @@ body{
 .testimonials{
 	background-color: #4e2d2d;
 	padding: 100px 0;
-	background-image: url(img/dominik-martin-100802.png) ;
+	background-image: url(img/Rectangle10.png) ;
 	background-size: cover;
 	background-position: bottom;
 }
@@ -426,22 +426,35 @@ body{
 	display: flex;
 	justify-content: center;
 	margin-bottom: 35px;
+	position: relative;
 }
 .testimonial{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	width: 150px;
-	
+	height:370px ;
+	position: relative;
 }
-.testimonial.one,
-.testimonial.two{
-	margin-right: 35px;
+
+.testimonial.three,
+.testimonial.one{
+	height: 150px;
+
+}
+.testimonial.three{
+	position: absolute;
+	left: 300px;
+	top: 0;
+}
+.testimonial.one{
+	position: absolute;
+	right: 300px;
+	top: 0;
 }
 .user_other{
 	display: flex;
 	flex-flow: column;
-
+	align-items: center;
 }
 .block_stars{
 	display: flex;
@@ -449,7 +462,7 @@ body{
 }
 .logo_people{
 	width: 44%;
-	margin-left: 41px;
+
 }
 
 
@@ -461,6 +474,7 @@ body{
 }
 .name.uncheck{
 	color: #a39292;
+	
 }
 .block_stars.uncheck span i{
 	color: #a34c4c;
@@ -468,10 +482,18 @@ body{
 
 .see{
 	color: #fff;
-	width: 75%;
-	
-	padding: 50px 55px;
+	width: 100%;
+	position: absolute;
+	right:-50px;
+	top:230px;
+
+	background: url(img/Rectangle13.png) 50% 0%;
+	padding: 65px 50px;
 }
 .unsee{
 	opacity: 0.5;
+
+}
+.notsee{
+	display: none;
 }
