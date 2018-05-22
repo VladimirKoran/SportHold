@@ -525,7 +525,7 @@ body{
 	margin-left: 15px;
 }
 .background_news{
-	opacity: 0.5;
+	/*opacity: 0.5;*/
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -545,6 +545,7 @@ body{
 	color: #fff;
 	margin-right: 25px;
 	margin-left: 25px;
+	opacity: 0.9;
 }
 
 .date{
@@ -560,6 +561,7 @@ body{
 .comments img{
 	height: 100%;
 	margin-left: 25px;
+	opacity: 0.9;
 }
 .comments p{
 	margin:0;
