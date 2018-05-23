@@ -507,7 +507,7 @@ body{
 	display: flex;
 	align-items: flex-end;
 	flex-wrap: wrap;
-	background-color: rgba(71, 36, 36, 1);
+	background-color: rgba(71, 36, 36, 0.5);
 	width: calc(33.33% - 20px);
 	position: relative;
 	height: 345px;
@@ -541,32 +541,36 @@ body{
 	margin-top: 110px;
 	color: #623232;
 }
+.info{
+	opacity: 0.9;
+	margin:25px;
+}
 .news p{
 	color: #fff;
-	margin-right: 25px;
-	margin-left: 25px;
-	opacity: 0.9;
+	
+	margin-bottom: 15px;
 }
-
+.text_news{
+	line-height: 25px;
+}
 .date{
 	font-weight: bold;
-	margin-top: 200px;
+	
 	margin-bottom: 0;
 }
 .comments{
 	display: flex;
 	width: 100%;
-	margin-bottom: 25px;
 }
 .comments img{
 	height: 100%;
-	margin-left: 25px;
-	opacity: 0.9;
+	
+	
 }
 .comments p{
 	margin:0;
 	color: #ff7373; 
-	margin-right: 25px;
+	
 }
 .text_news{
 	margin-top: 0;
